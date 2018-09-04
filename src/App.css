@@ -1,0 +1,115 @@
+.container {
+}
+header {
+  float: left;
+  width: 100%;
+  background: #303030;
+  text-align: center;
+  font-size: 1.6rem;
+  color: #fff;
+  padding: 20px;
+}
+nav {
+  float: left;
+  background: #f4f4f4;
+  width: 100%;
+}
+.items {
+  float: left;
+  width: 100%;
+  padding: 10px;
+}
+.item {
+  float: left;
+  width: calc(50% - 20px);
+  margin: 10px;
+  padding: 10px;
+  background: #eee;
+  border: 1px solid #ddd;
+}
+.item h4 {
+  margin: 0;
+}
+.item h6 {
+  margin: 7px 0;
+  text-transform: capitalize;
+}
+.btn {
+  color: #222;
+  background-color: transparent;
+  border: none;
+  margin: 10px 0px 10px 20px;
+  padding: 8px 20px;
+  cursor: pointer;
+}
+.btn span {
+  display: none;
+}
+.btn:hover,
+.btn.active {
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.4) inset;
+}
+.btn.active {
+  background-color: #535353;
+  color: #fff;
+}
+.btn-group {
+  float: left;
+}
+.labels {
+  float: right;
+}
+.labels label {
+  margin: 11px 20px 0 0;
+  float: left;
+  font-size: 0.9rem;
+  line-height: 1.8rem;
+}
+.labels span {
+  font-weight: bold;
+}
+header span.badge {
+  display: none;
+  background: #eee;
+  padding: 5px;
+  top: -2px;
+  position: relative;
+  border-radius: 8px;
+  color: #222;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+  .item {
+    width: calc(100% - 20px);
+  }
+  .items {
+    margin-bottom: 60px;
+  }
+  nav {
+    position: fixed;
+    bottom: 0;
+  }
+  .btn-group {
+    width: 100%;
+  }
+  header span.badge {
+    display: inline-block;
+  }
+  .labels {
+    display: none;
+  }
+  .btn {
+    width: 50%;
+    float: left;
+    margin: 0;
+    padding: 18px 0;
+    font-size: 1rem;
+  }
+  .btn.active {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6) inset;
+  }
+  .btn.active span {
+    display: inline;
+  }
+}
