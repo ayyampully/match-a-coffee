@@ -15,7 +15,10 @@ class App extends Component {
     ],
     pairs: []
   };
-
+  /**
+   * will update pairs based on the selection
+   * @param selection - selected id passed from button
+   */
   handleSelection = selection => {
     const pairs = this.formatData(this.state.users, selection);
     this.setState({
@@ -23,14 +26,18 @@ class App extends Component {
       pairs
     });
   };
-
+  /**
+   * this will make users to random pairs
+   * @param users - array of user objects
+   * @param selection - selected type
+   * @returns an array contains pairs of users
+   */
   formatData = (users, selection) => {
     let pairs = [];
     const groupOfUsers = {};
     if (users.length) {
       users.forEach(user => {
         const key = user[selection];
-
         if (groupOfUsers[key]) {
           groupOfUsers[key].push(user);
         } else {

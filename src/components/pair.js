@@ -11,6 +11,11 @@ const Pair = ({ pair }) => {
     </div>
   );
 };
+/**
+ * helper function to format name
+ * @param person - person object
+ * @returns string formated in firstname lastname
+ */
 function getNameFormatted(person) {
   let str = ``;
   if (typeof person === "object") {
@@ -20,6 +25,12 @@ function getNameFormatted(person) {
   }
   return str;
 }
+/**
+ * helper function to get department
+ * @param person1 - person object
+ * @param person2 - person object
+ * @returns string formatted
+ */
 function getDepartmentFormatted(person1, person2) {
   let dept1 = "",
     dept2 = "";
@@ -35,6 +46,12 @@ function getDepartmentFormatted(person1, person2) {
     return dept1 || dept2;
   }
 }
+/**
+ * helper function to get location formatted
+ * @param person1 - person object
+ * @param person2 - person object
+ * @returns string formatted
+ */
 function getLocationFormatted(person1, person2) {
   let location1 = "",
     location2 = "";

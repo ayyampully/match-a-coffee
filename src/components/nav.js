@@ -29,6 +29,12 @@ const Nav = ({ actions, selection, handleClick, count, pairsCount }) => {
     </nav>
   );
 };
+/**
+ *
+ * @param item - id of the button
+ * @param selection - selection to make active
+ * @returns a string containng class names.
+ */
 function getClassName(item, selection) {
   let str = "btn btn-secondary";
   if (selection === item) {
