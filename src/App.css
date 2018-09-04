@@ -1,3 +1,4 @@
+/* If the file grows, need to split it into modules for each component */
 header {
   float: left;
   width: 100%;
